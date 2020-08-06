@@ -3,10 +3,11 @@ FROM alpine:latest
 # 作者
 # MAINTAINER authName "email@domain.com"
 # 设置工作目录
+RUN apk add --no-cache tzdata
 RUN mkdir -p /opt/game/fibonacci
 WORKDIR /opt/game/fibonacci
 # 将服务器的go工程代码加入到docker容器中
-ADD / /usr/local/games/projects/Fibonacci
+ADD / /opt/game/Fibonacci
 # go 构建可执行文件
 # RUN go build .
 

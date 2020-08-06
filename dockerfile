@@ -7,7 +7,7 @@ RUN apk add --no-cache tzdata
 RUN mkdir -p /opt/game/fibonacci
 WORKDIR /opt/game/fibonacci
 # 将服务器的go工程代码加入到docker容器中
-ADD / /opt/game/Fibonacci
+ADD / /opt/game/fibonacci
 # go 构建可执行文件
 # RUN go build .
 

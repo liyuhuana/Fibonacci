@@ -1,5 +1,5 @@
 # 源镜像
-FROM golang:latest
+FROM alpine:latest
 # 作者
 # MAINTAINER authName "email@domain.com"
 # 设置工作目录

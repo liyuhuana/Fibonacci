@@ -13,4 +13,4 @@ ENV GID 99
 ENV TCP 0
 ENV ST 0
 
-CMD ["./kaeng"]
+CMD ["./fibonacci"]

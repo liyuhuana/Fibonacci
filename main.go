@@ -1,10 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
-	for i := 0; i < 10; i++ {
+	i := 0
+	for {
+		time.Sleep(time.Second)
 		fmt.Println(i, "的fibonacci数是:", fibonacci(i))
+		i++
 	}
 }
 
